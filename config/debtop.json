@@ -4,6 +4,7 @@
     "recipe[xorg]",
     "recipe[nvidia]",
     "recipe[st]",
-    "recipe[rofi]"
+    "recipe[rofi]",
+    "recipe[ruby]"
   ]
 }
