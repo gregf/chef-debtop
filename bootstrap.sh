@@ -14,8 +14,10 @@ apt-get install --quiet --yes git
 
 # clone repository
 
-#git clone https://github.com/gregf/chef-debtop
+cd /tmp
+git clone https://github.com/gregf/chef-debtop
 
 # Run chef
 
+cd /tmp/chef-debtop
 chef-solo -c config/solo.rb -j config/debtop.json
