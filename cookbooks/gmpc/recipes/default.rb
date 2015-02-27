@@ -58,7 +58,7 @@ end
 bash 'install_libglyr' do
   cwd "#{Chef::Config[:file_cache_path]}/libglyr"
   code <<-EOH
-    cmake -DCMAKE_INSTALL_PREFIX=/usr/local . && make -j2 && make install
+    cmake -DCMAKE_INSTALL_PREFIX=/usr/local . && make && make install
     EOH
   environment 'PREFIX' => '/usr/local', 'PKG_CONFIG_PATH' => '/usr/local/lib/pkgconfig'
 end
@@ -73,7 +73,7 @@ end
 bash 'install_libmpd' do
   cwd "#{Chef::Config[:file_cache_path]}/libmpd"
   code <<-EOH
-    ./autogen.sh --prefix=/usr/local && make -j2 && make install
+    ./autogen.sh --prefix=/usr/local && make && make install
     EOH
   environment 'PREFIX' => '/usr/local', 'PKG_CONFIG_PATH' => '/usr/local/lib/pkgconfig'
 end
@@ -88,7 +88,7 @@ end
 bash 'install_gmpc' do
   cwd "#{Chef::Config[:file_cache_path]}/gmpc"
   code <<-EOH
-    ./autogen.sh --prefix=/usr/local --enable-maintainermode && make -j2 && make install
+    ./autogen.sh --prefix=/usr/local --enable-maintainermode && make && make install
     EOH
   environment 'PREFIX' => '/usr/local', 'PKG_CONFIG_PATH' => '/usr/local/lib/pkgconfig'
 end
