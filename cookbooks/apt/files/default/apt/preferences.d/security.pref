@@ -1,0 +1,3 @@
+Pin: release l=Debian-Security
+Pin-Priority: 1000
+Package: *

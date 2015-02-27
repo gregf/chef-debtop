@@ -1,0 +1,4 @@
+deb http://http.debian.net/debian/ testing main contrib non-free
+deb http://security.debian.org/ testing/updates main contrib non-free
+
+deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
