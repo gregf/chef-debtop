@@ -12,6 +12,11 @@ apt-get upgrade --quiet --yes
 # Install git
 apt-get install --quiet --yes git
 
+# install chefdk
+cd /tmp
+wget -c https://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/chefdk_0.4.0-1_amd64.deb
+dpkg -i chefdk_0.4.0-1_amd64.deb
+
 # clone repository
 
 cd /tmp
