@@ -20,7 +20,12 @@ dpkg -i chefdk_0.4.0-1_amd64.deb
 # clone repository
 
 cd /tmp
-git clone https://github.com/gregf/chef-debtop
+if [[ -d /tmp/chef-debtop ]]; then
+  cd /tmp/chef-debtop
+  git pull
+else
+  git clone https://github.com/gregf/chef-debtop
+fi
 
 # Run chef
 
