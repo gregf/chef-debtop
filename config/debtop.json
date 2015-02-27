@@ -5,6 +5,12 @@
     "recipe[nvidia]",
     "recipe[st]",
     "recipe[rofi]",
-    "recipe[ruby]"
+    "recipe[ruby]",
+    "recipe[gmpc]",
+    "recipe[packages]",
+    "recipe[i3wm]",
+    "recipe[mail]",
+    "recipe[firefox]",
+    "recipe[golang]"
   ]
 }
