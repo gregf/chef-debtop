@@ -12,6 +12,7 @@
     "recipe[mail]",
     "recipe[firefox]",
     "recipe[golang]",
-    "recipe[beets]"
+    "recipe[beets]",
+    "recipe[packer]"
   ]
 }

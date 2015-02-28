@@ -1,6 +1,6 @@
 #
-# Cookbook Name:: packages
-# Recipe:: default
+# Cookbook Name:: packer
+# Spec:: default
 #
 # Copyright 2015 Greg Fitzgerald
 # 
@@ -16,10 +16,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-pkgs = %W(vim-gtk htop zsh pulseaudio pavucontrol python-pip weechat feh openntpd
-          most rsync deluge filezilla bitlbee mpv vlc lxappearance cups splix
-          gtk2-engines taskwarrior docker.io unzip)
 
-pkgs.each do |pkg|
-  package pkg
+require 'spec_helper'
+
+describe 'packer::default' do
+
+  context 'When all attributes are default, on an unspecified platform' do
+
+    let(:chef_run) do
+      runner = ChefSpec::ServerRunner.new
+      runner.converge(described_recipe)
+    end
+
+    it 'converges successfully' do
+      chef_run # This should not raise an error
+    end
+
+  end
 end
