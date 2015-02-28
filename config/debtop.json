@@ -11,6 +11,7 @@
     "recipe[i3wm]",
     "recipe[mail]",
     "recipe[firefox]",
-    "recipe[golang]"
+    "recipe[golang]",
+    "recipe[beets]"
   ]
 }
