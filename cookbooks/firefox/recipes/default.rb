@@ -42,7 +42,7 @@ end
 bash 'install_firefox' do
   cwd Chef::Config[:file_cache_path]
   code <<-EOH
-    mv firefox /opt
+    cp -R firefox /opt
   EOH
   action :nothing
 end
