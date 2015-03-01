@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-pkgs = %W(mutt-patched offlineimap catdoc antiword links lynx elinks)
+pkgs = %W(mutt-patched offlineimap catdoc antiword links lynx elinks muttprint)
 
 pkgs.each do |pkg|
   package pkg
