@@ -18,7 +18,7 @@
 
 pkgs = %W(vim-gtk htop zsh pulseaudio pavucontrol python-pip weechat feh openntpd
           most rsync deluge filezilla bitlbee mpv vlc lxappearance gtk2-engines 
-          taskwarrior docker.io unzip grc nmap rtl-sdr libreoffice-gtk)
+          taskwarrior docker.io unzip grc nmap rtl-sdr libreoffice-gtk zathura)
 
 pkgs.each do |pkg|
   package pkg
