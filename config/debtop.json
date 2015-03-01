@@ -15,6 +15,7 @@
     "recipe[beets]",
     "recipe[packer]",
     "recipe[vagrant]",
-    "recipe[dropbox]"
+    "recipe[dropbox]",
+    "recipe[virtualbox]"
   ]
 }
