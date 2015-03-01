@@ -13,6 +13,8 @@
     "recipe[firefox]",
     "recipe[golang]",
     "recipe[beets]",
-    "recipe[packer]"
+    "recipe[packer]",
+    "recipe[vagrant]",
+    "recipe[dropbox]"
   ]
 }
