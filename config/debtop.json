@@ -16,6 +16,7 @@
     "recipe[packer]",
     "recipe[vagrant]",
     "recipe[dropbox]",
-    "recipe[virtualbox]"
+    "recipe[virtualbox]",
+    "recipe[printer]"
   ]
 }
